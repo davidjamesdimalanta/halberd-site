@@ -1,13 +1,55 @@
+@import url('../public/fonts/Matteo/stylesheet.css');
+
+/* Source Sans Pro Font Faces */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+  
+  /* Spacing System */
+  --space-hairline: 4px;     /* Icons inside buttons, tight labels */
+  --space-compact: 8px;      /* Small gaps (form labels & inputs, chips, badges) */
+  --space-text-tight: 12px;  /* Stacked text spacing (heading + paragraph) */
+  --space-standard: 16px;    /* Standard body copy, list items, small card padding */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --space-section-sm: 24px;  /* Section spacing inside cards, form groups, nav items */
+  --space-section-md: 32px;  /* Larger gaps between components (cards, sections) */
+  --space-section-lg: 40px;  /* Section-to-section spacing, major layout breaks */
+
+  --space-hero-sm: 48px;     /* Hero section padding, footer spacing */
+  --space-hero-md: 64px;     /* Major layout padding, whitespace-heavy sections */
+  --space-hero-lg: 80px;     /* Landing page hero gaps, large breathing room */
 }
 
 html,
@@ -35,8 +77,74 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+/* Text Styles */
+.text-small {
+  font-family: var(--font-source-sans-pro);
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 24px;
 }
+
+.text-base {
+  font-family: var(--font-source-sans-pro);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+}
+
+.text-lead {
+  font-family: var(--font-source-sans-pro);
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 28px;
+}
+
+.text-h6 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 29px;
+}
+
+.text-h5 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+.text-h4 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 36px;
+}
+
+.text-h3 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 40px;
+}
+
+.text-h2 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+
+.text-h1 {
+  font-family: var(--font-matteo);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 55px;
+}
+
+.text-display {
+  font-family: var(--font-matteo);
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 66px;
+}
+
