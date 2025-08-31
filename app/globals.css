@@ -37,6 +37,22 @@
   --background: #ffffff;
   --foreground: #171717;
   
+  /* Halberd Blue Color Tokens */
+  --halberd-blue-50: #F2F8FF;
+  --halberd-blue-100: #EBF2FF;
+  --halberd-blue-400: #AFB5CB;
+  --halberd-blue-500: #8F95AB;
+  --halberd-blue-800: #353B4D;
+  --halberd-blue-900: #141B2B;
+  
+  /* Halberd Analogous Color Tokens */
+  --halberd-analogous-50: #E6EEF1;
+  --halberd-analogous-100: #C5D4D7;
+  --halberd-analogous-400: #63848C;
+  --halberd-analogous-500: #486F79;
+  --halberd-analogous-800: #243B41;
+  --halberd-analogous-900: #14262B;
+  
   /* Spacing System */
   --space-hairline: 4px;     /* Icons inside buttons, tight labels */
   --space-compact: 8px;      /* Small gaps (form labels & inputs, chips, badges) */
