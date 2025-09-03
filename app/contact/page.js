@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import Button from "./components/Button";
 import Image from "next/image";
 import PromiseStatement from "./components/PromiseStatement";
+import HalberdMethod from "./components/HalberdMethod";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 
@@ -46,8 +47,9 @@ export default function Home() {
           />
         </div>
       </main>
-      <Pricing />
       <PromiseStatement />
+      <HalberdMethod />
+      <Pricing />
       <Contact />
     </div>
   );

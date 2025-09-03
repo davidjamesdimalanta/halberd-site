@@ -198,10 +198,10 @@ a.secondary {
   }
 
   .heroImage {
-    position: static;
+    position: absolute;
     width: 250px;
     height: 350px;
-    margin: 0 auto 40px;
+    margin: auto;
     order: -1;
   }
 

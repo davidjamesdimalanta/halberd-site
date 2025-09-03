@@ -50,18 +50,18 @@ export default function Pricing() {
     <section className={styles.pricingSection}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <p className={styles.subtitle}>PRICING</p>
-          <h2 className={styles.title}>PICK THE PACKAGE THAT FITS YOUR NEEDS</h2>
+          <p className={`${styles.subtitle} text-small`}>PRICING</p>
+          <h2 className={`${styles.title} text-h2`}>PICK THE PACKAGE THAT FITS YOUR NEEDS</h2>
         </div>
 
         <div className={styles.pricingGrid}>
           {pricingTiers.map((tier, index) => (
             <div key={index} className={styles.pricingCard}>
               <div className={styles.cardHeader}>
-                <p className={styles.cardSubtitle}>{tier.subtitle}</p>
-                <h3 className={styles.cardTitle}>{tier.title}</h3>
+                <p className={`${styles.cardSubtitle} text-small`}>{tier.subtitle}</p>
+                <h3 className={`${styles.cardTitle} text-h4`}>{tier.title}</h3>
                 <div className={styles.priceContainer}>
-                  <span className={styles.price}>{tier.price}</span>
+                  <span className={`${styles.price} text-h1`}>{tier.price}</span>
                 </div>
                 <Button variant="primary" className={styles.bookButton}>
                   Book A Call
@@ -69,8 +69,8 @@ export default function Pricing() {
               </div>
 
               <div className={styles.cardBody}>
-                <p className={styles.cardDescription}>{tier.description}</p>
-                <ul className={styles.featureList}>
+                <p className={`text-base ${styles.cardDescription}`}>{tier.description}</p>
+                <ul className={`text-small ${styles.featureList}`}>
                   {tier.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className={styles.feature}>
                       {feature}

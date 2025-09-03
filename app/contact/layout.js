@@ -1,0 +1,51 @@
+import localFont from "next/font/local";
+import "../app/globals.css";
+
+const matteo = localFont({
+  src: [
+    {
+      path: "../public/fonts/Matteo/Matteo-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Matteo/Matteo-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-matteo",
+  display: "swap",
+});
+
+const sourceSansPro = localFont({
+  src: [
+    {
+      path: "../public/fonts/source-sans-pro/SourceSansPro-Regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/source-sans-pro/SourceSansPro-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-source-sans-pro",
+  display: "swap",
+});
+
+export const metadata = {
+  title: "Halberd Solutions",
+  description: "Halberd Solutions is a website development firm that provides early-stage fintech startups with a polished website and memorable brand.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={`${matteo.variable} ${sourceSansPro.variable}`}>
+        {children}
+      </body>
+    </html>
+  );
+}
