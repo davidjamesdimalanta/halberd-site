@@ -17,10 +17,8 @@ export default function Contact() {
         </div>
         
         <div className={styles.content}>
-          <p className={styles.subtitle}>LETS TALK</p>
-          <h2 className={styles.title}>
-            GET IN TOUCH WITH SOME OF THE INDUSTRY&apos;S FINEST
-          </h2>
+          <p className={`${styles.subtitle} text-small`}>LETS TALK</p>
+          <h2 className={`${styles.title} text-h2`}>GET IN TOUCH WITH SOME OF THE INDUSTRY&apos;S FINEST</h2>
           <Button variant="primary" className={styles.contactButton}>
             Book A Call
           </Button>

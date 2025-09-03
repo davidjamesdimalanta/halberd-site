@@ -47,7 +47,6 @@ export default function Home() {
         </div>
       </main>
       <Pricing />
-      <PromiseStatement />
       <Contact />
     </div>
   );
