@@ -4,6 +4,7 @@ import Image from "next/image";
 import PromiseStatement from "./components/PromiseStatement";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
       </main>
       <Pricing />
       <Contact />
+      <Footer />
     </div>
   );
 }
