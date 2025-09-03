@@ -1,6 +1,10 @@
 import styles from "./page.module.css";
 import Button from "./components/Button";
 import Image from "next/image";
+import PromiseStatement from "./components/PromiseStatement";
+import HalberdMethod from "./components/HalberdMethod";
+import Pricing from "./components/Pricing";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -36,13 +40,18 @@ export default function Home() {
         
         <div className={styles.heroImage}>
           <Image 
-            src="/images/Halberd-Union.png" 
-            width={400}
-            height={400}
-            alt="Halberd Union Logo" 
+            src="/images/halberd.svg" 
+            width={500}
+            height={500}
+            alt="Halberd Logo" 
           />
         </div>
       </main>
+      
+      <PromiseStatement />
+      <HalberdMethod />
+      <Pricing />
+      <Contact />
     </div>
   );
 }

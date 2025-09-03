@@ -1,0 +1,199 @@
+.pricingSection {
+  padding: 120px 80px;
+  background: #2c2c2c;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #ccc;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
+  margin: 0;
+  letter-spacing: -0.02em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.pricingCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  padding: 40px 30px;
+  background: white;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cardSubtitle {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #666;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.cardTitle {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2c2c2c;
+  margin: 0 0 24px 0;
+}
+
+.priceContainer {
+  margin-bottom: 32px;
+}
+
+.price {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c2c2c;
+  letter-spacing: -0.02em;
+}
+
+.bookButton {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.cardBody {
+  padding: 40px 30px;
+  background: #f8f9fa;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardDescription {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #2c2c2c;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.feature {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.feature::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #2c2c2c;
+  font-weight: bold;
+}
+
+.feature:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .pricingSection {
+    padding: 80px 40px;
+  }
+
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .cardTitle {
+    font-size: 24px;
+  }
+
+  .price {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricingSection {
+    padding: 60px 20px;
+  }
+
+  .header {
+    margin-bottom: 60px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .cardHeader {
+    padding: 30px 20px;
+  }
+
+  .cardBody {
+    padding: 30px 20px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .cardDescription {
+    font-size: 13px;
+  }
+
+  .feature {
+    font-size: 13px;
+  }
+}
