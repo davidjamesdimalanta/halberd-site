@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import BottomNavbar from "./components/BottomNavbar";
 
 const matteo = localFont({
   src: [
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${matteo.variable} ${sourceSansPro.variable}`}>
         {children}
+        <BottomNavbar />
       </body>
     </html>
   );

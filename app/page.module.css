@@ -24,7 +24,7 @@
 }
 
 .logo {
-  height: 40px;
+  height: 80px;
   width: auto;
 }
 
@@ -184,6 +184,9 @@ a.secondary {
     width: 340px;
     object-fit: contain;
   }
+  .logo {
+    height: 66px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -216,6 +219,9 @@ a.secondary {
   .buttonGroup {
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .logo {
+    height: 48px;
   }
 }
 

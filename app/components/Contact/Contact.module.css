@@ -13,9 +13,10 @@
 
 .backgroundLogo {
   position: absolute;
-  left: -3%;
-  bottom: -100%;
-  opacity: 1;
+  left: -5%;
+  bottom: -75%;
+  transform: translateY(-50%);
+  opacity: 0.5;
   pointer-events: none;
   z-index: 1;
 }
