@@ -28,7 +28,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    width: 30%;
+    width: 0%;
 }
 
 .columnHeader {
@@ -43,4 +43,26 @@
     color: white;
     display: block;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        margin-bottom: 1rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 1rem;
+    }
+
+    .grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
